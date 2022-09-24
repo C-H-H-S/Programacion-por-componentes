@@ -10,19 +10,19 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Pagina 1</title>
+        <style> 
+            body { 
+                background-image: url("https://media.giphy.com/media/5z0Clc1s7uQfxuC1eG/giphy.gif"); 
+                background-position: center 25%; 
+                background-size: cover; 
+            } 
+        </style> 
     </head>
     <body>
         <br>
         <div style="color:white"><h2>BIENVENIDO</h2><div></div>
             <br>
             <h1>Hello World!</h1>
-            <style> 
-            body { 
-                background-image: url("https://c.tenor.com/9vuuvZ8nQWUAAAAC/stars-night.gif"); 
-                background-position: center 25%; 
-                background-size: cover; 
-            } 
-        </style> 
             <br>
             <center><h1><p style="color:white; font-size:100px">Claudia Helena Hernández Silva</p></h1></center>
         <br>
