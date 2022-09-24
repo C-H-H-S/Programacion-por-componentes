@@ -19,7 +19,7 @@
             <body style="background-color:#000000;">
 </body>
             <br>
-        <h1>Claudia Helena Hernandez Silva</h1>
+            <center>Claudia Helena Hernandez Silva</center>
         <br>
         <a href="Control">Verificar servelet objeto Response</a>
         <br>
@@ -29,12 +29,14 @@
             <label>Apellidos:</label>
             <input type="text" name="txt_Apellidos" required/>
             <input type="submit" name="btn_registrar" value="registrar "/>
-            <img src="https://c.tenor.com/9vuuvZ8nQWUAAAAC/stars-night.gif"> 
+            
             
             <br><!-- <br> -->
             <br>
             <br>
            <br> <table style="background-color:#7512F3"><tr><th>NOMBRE</th><th>TRABAJO</th><th>CORREO</th></tr><tr><td>Claudia Hernandez</td><td>Futura ingeniera</td><td>clahernandezsi.@gmail.com</td></tr></table>
-        <br></form>
+        <br>
+        <img src="https://c.tenor.com/9vuuvZ8nQWUAAAAC/stars-night.gif"> 
+        </form>
     </body>
 </html>
