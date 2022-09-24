@@ -13,13 +13,13 @@
     </head>
     <body>
         <br>
-        <div style="color:white">BIENVENIDO<div></div>
+        <div style="color:white"><h2>BIENVENIDO</h2><div></div>
             <br>
             <h1>Hello World!</h1>
             <body style="background-color:#000000;">
 </body>
             <br>
-            <center>Claudia Helena Hernandez Silva</center>
+            <center><h1><p style="color:white; font-size:100px">Claudia Helena Hernández Silva</p></h1></center>
         <br>
         <a href="Control">Verificar servelet objeto Response</a>
         <br>
@@ -30,7 +30,7 @@
             <input type="text" name="txt_Apellidos" required/>
             <input type="submit" name="btn_registrar" value="registrar "/>
             
-            
+            <a href="https://www.facebook.com/groups/devgrupo">Visita este grupo de desarrollo web</a>
             <br><!-- <br> -->
             <br>
             <br>
