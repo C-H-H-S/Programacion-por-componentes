@@ -35,7 +35,7 @@
             <input type="text" name="txt_Apellidos" required/>
             <input type="submit" name="btn_registrar" value="registrar "/>
             
-            <a href="https://www.facebook.com/groups/devgrupo">Visita este grupo de desarrollo web</a>
+            <br><div style="color:white"><a href="https://www.facebook.com/groups/devgrupo">Visita este grupo de desarrollo web</a>
             <br><!-- <br> -->
             <br>
             <br>
