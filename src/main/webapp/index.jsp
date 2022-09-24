@@ -15,7 +15,8 @@
         <h1>Hello World!</h1>
         <br>
         <div style="color:white">BIENVENIDO<div></div>
-            <div style="background-color:#17202A;"></div>
+            <body style="background-color:#17202A;">
+</body>
             <br>
         <h1>Claudia Helena Hernandez Silva</h1>
         <br>
