@@ -13,17 +13,22 @@
     </head>
     <body>
         <h1>Hello World!</h1>
+        <br>
         <div style="color:red">BIENVENIDO<div></div>
+            <br>
         <h1>Claudia Helena Hernandez Silva</h1>
+        <br>
         <a href="Control">Verificar servelet objeto Response</a>
+        <br>
         <form action="Control" method="get">
             <label>Nombres:</label>
             <input type="text" name="txt_Nombre" required/>
             <label>Apellidos:</label>
             <input type="text" name="txt_Apellidos" required/>
             <input type="submit" name="btn_registrar" value="registrar "/>
-            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gifmaniacos.es%2Fde-colores-estrellas-gif%2F&psig=AOvVaw39GLDAi_rRp4yB8VggrkLu&ust=1664075054443000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCLCX7eq4rPoCFQAAAAAdAAAAABAD.gif"> 
-            <table style="background-color:#33475b"><tr><th>Name</th><th>Job Title</th><th>Email address</th></tr><tr><td>Anna Fitzgerald</td><td>Staff Writer</td><td>example@company.com</td></tr><tr><td>John Smith</td><td>Marketing Manager</td><td>example2@company.com</td></tr><tr><td>Zendaya Grace</td><td>CEO</td><td>example2@company.com</td></tr></table>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Seven_segment_display-animated.gif"> 
+            <br>
+            <table style="background-color:#7512F3"><tr><th>Name</th><th>Job Title</th><th>Email address</th></tr><tr><td>Claudia Hernandez</td><td>Futura ingeniera</td><td>clahernandezsi.@gmail.com</td></tr></table>
         </form>
     </body>
 </html>
