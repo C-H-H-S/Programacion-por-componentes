@@ -16,8 +16,13 @@
         <div style="color:white"><h2>BIENVENIDO</h2><div></div>
             <br>
             <h1>Hello World!</h1>
-            <body style="background-color:#000000;">
-</body>
+            <style> 
+            body { 
+                background-image: url("https://c.tenor.com/9vuuvZ8nQWUAAAAC/stars-night.gif"); 
+                background-position: center 25%; 
+                background-size: cover; 
+            } 
+        </style> 
             <br>
             <center><h1><p style="color:white; font-size:100px">Claudia Helena Hernández Silva</p></h1></center>
         <br>
@@ -36,7 +41,7 @@
             <br>
            <br> <table style="background-color:#7512F3"><tr><th>NOMBRE</th><th>TRABAJO</th><th>CORREO</th></tr><tr><td>Claudia Hernandez</td><td>Futura ingeniera</td><td>clahernandezsi.@gmail.com</td></tr></table>
         <br>
-        <img src="https://c.tenor.com/9vuuvZ8nQWUAAAAC/stars-night.gif"> 
+      
         </form>
     </body>
 </html>
