@@ -14,7 +14,8 @@
     <body>
         <h1>Hello World!</h1>
         <br>
-        <div style="color:red">BIENVENIDO<div></div>
+        <div style="color:white">BIENVENIDO<div></div>
+            <div style="background-color:#17202A;"></div>
             <br>
         <h1>Claudia Helena Hernandez Silva</h1>
         <br>
@@ -26,9 +27,9 @@
             <label>Apellidos:</label>
             <input type="text" name="txt_Apellidos" required/>
             <input type="submit" name="btn_registrar" value="registrar "/>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Seven_segment_display-animated.gif"> 
+            <img src="https://c.tenor.com/9vuuvZ8nQWUAAAAC/stars-night.gif"> 
             <br>
-            <table style="background-color:#7512F3"><tr><th>Name</th><th>Job Title</th><th>Email address</th></tr><tr><td>Claudia Hernandez</td><td>Futura ingeniera</td><td>clahernandezsi.@gmail.com</td></tr></table>
+            <table style="background-color:#7512F3"><tr><th>NOMBRE</th><th>TRABAJO</th><th>CORREO</th></tr><tr><td>Claudia Hernandez</td><td>Futura ingeniera</td><td>clahernandezsi.@gmail.com</td></tr></table>
         </form>
     </body>
 </html>
