@@ -57,7 +57,7 @@
                   </label>
                    <input type="text" name="txt_Telefono" required/>
                 </p>                    
-                <button type="submit" name="btn_registrar" value="registrar "/> <p>Enviar</p></button>
+                <input type="submit" name="btn_registrar" value="registrar "/>  
 
                 <p class="aviso">
                   <span class="obligatorio"> * </span>los campos son obligatorios.
