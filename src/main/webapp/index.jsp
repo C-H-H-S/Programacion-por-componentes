@@ -24,6 +24,9 @@
       <h1>Formulario de contacto</h1>
         <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
 
+
+              <form action="Control" method="get">
+
             
                 <p>
                   <label for="Nombre" class="colocar_nombre">Nombre
