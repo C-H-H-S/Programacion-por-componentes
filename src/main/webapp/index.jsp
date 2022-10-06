@@ -56,12 +56,9 @@
                   <label for="Telefono" class="colocar_telefono">Teléfono
                   </label>
                    <input type="text" name="txt_Telefono" required/>
-                </p>                    
-                <input type="submit" name="btn_registrar" value="registrar "/>  
-
-                <p class="aviso">
-                  <span class="obligatorio"> * </span>los campos son obligatorios.
-                </p>          
+                </p>       
+                
+               <button type="submit" name="btn_registrar" value="registrar id="enviar"><p>Enviar</p></button>         
             
           </form>
     </div>  
