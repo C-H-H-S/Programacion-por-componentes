@@ -11,50 +11,19 @@
   <meta charset="UTF-8">
   <title>Formulario de contacto</title>
 
- <link rel="stylesheet" src="estilo.css">
- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Pagina 1</title>
-        <style> 
-            body { 
-                background-image: url("https://media.giphy.com/media/5z0Clc1s7uQfxuC1eG/giphy.gif"); 
-                background-position: center 25%; 
-                background-size: cover; 
-            } 
-        </style> 
+  <!-- Enlace al documento css. no aplicable en codepen.
+  <link rel="stylesheet" type="text/css" href="contact-form.css">
+-->
+  
   </head>
-    <body>
-        <br>
-        <div style="color:white"><h2>BIENVENIDO</h2><div></div>
-            <br>
-            <h1>Hello World!</h1>
-            <br>
-            <center><h1><p style="color:white; font-size:50px">Claudia Helena Hernández Silva</p></h1></center>
-        <br>
-        <a href="Control">Verificar servelet objeto Response</a>
-        <br>
-        <form action="Control" method="get">
-            <p>
-                  <label for="nombre" class="colocar_nombre">Nombre:
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="text" name="txt_Nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                </p>
-                
-            <label>Nombre:</label>
-            <input type="text" name="txt_Nombre" required/>
-            <label>Apellidos:</label>
-            <input type="text" name="txt_Apellidos" required/>
-            <label>Telefono:</label>
-            <input type="text" name="txt_Telefono" required/>
-            <label>Correo:</label>
-            <input type="text" name="txt_Correo" required/>
-            <input type="submit" name="btn_registrar" value="registrar "/>  
-        </form>
-    </body>
-</html>
+
+
 <body>  
   
+  <!-- formulario de contacto en html y css -->  
+
   <div class="contact_form">
+
     <div class="formulario">      
       <h1>Formulario de contacto</h1>
         <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
@@ -81,7 +50,27 @@
                   <label for="telefone" class="colocar_telefono">Teléfono
                   </label>
                     <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                </p>                      
+                </p>    
+              
+                <p>
+                  <label for="website" class="colocar_website">Sitio web
+                  </label>
+                    <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+                </p>    
+              
+                <p>
+                  <label for="asunto" class="colocar_asunto">Asunto
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                </p>    
+              
+                <p>
+                  <label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                  </label>                     
+                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                </p>                    
               
                 <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
 
