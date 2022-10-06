@@ -39,14 +39,14 @@
                 </p>
                 
                 <p>
-                  <label for="Apellido" class="colocar_nombre">Nombre
+                  <label for="Apellido" class="colocar_nombre">Apellido
                     <span class="obligatorio">*</span>
                   </label>
                      <input type="text" name="txt_Apellidos" required/>
                 </p>
               
                 <p>
-                  <label for="Correo o Email" class="colocar_email">Email
+                  <label for="Correo o Email" class="colocar_email">Correo o Email
                     <span class="obligatorio">*</span>
                   </label>
                      <input type="text" name="txt_Correo" required/>
@@ -57,7 +57,7 @@
                   </label>
                    <input type="text" name="txt_Telefono" required/>
                 </p>                    
-                <button type="submit" name="btn_registrar" value="registrar "><p>Enviar</p></button>
+                <button type="submit" name="btn_registrar" value="registrar "/> <p>Enviar</p></button>
 
                 <p class="aviso">
                   <span class="obligatorio"> * </span>los campos son obligatorios.
