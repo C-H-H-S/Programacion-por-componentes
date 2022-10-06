@@ -11,9 +11,8 @@
   <meta charset="UTF-8">
   <title>Formulario de contacto</title>
 
-  <!-- Enlace al documento css. no aplicable en codepen.
-  <link rel="stylesheet" type="text/css" href="contact-form.css">
--->
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+
   
   </head>
 
