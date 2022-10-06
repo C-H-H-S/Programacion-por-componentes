@@ -33,6 +33,13 @@
         <a href="Control">Verificar servelet objeto Response</a>
         <br>
         <form action="Control" method="get">
+            <p>
+                  <label for="nombre" class="colocar_nombre">Nombre:
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="txt_Nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+                
             <label>Nombre:</label>
             <input type="text" name="txt_Nombre" required/>
             <label>Apellidos:</label>

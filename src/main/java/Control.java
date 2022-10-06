@@ -68,7 +68,7 @@ public class Control extends HttpServlet {
             out.println("<title>RESPUESTA1</title>");            
             out.println("</head>");
             out.println("<body>");
-             out.println("<h1>El domicilio que llego: "+n+" "+a+" "+tel+" "+correo+"</h1>");
+             out.println("<h1>El domicilio que llego: "+n+"<br> "+a+"<br> "+tel+"<br> "+correo+"</h1>");
             out.println("<h1>Esta es una respuesta desde el servelet control</h1>");
             out.println("</body>");
             out.println("</html>");
