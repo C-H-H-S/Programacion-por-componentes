@@ -32,46 +32,32 @@
 
             
                 <p>
-                  <label for="nombre" class="colocar_nombre">Nombre
+                  <label for="Nombre" class="colocar_nombre">Nombre
                     <span class="obligatorio">*</span>
                   </label>
                     <input type="text" name="txt_Nombre" required/>
                 </p>
-              
+                
                 <p>
-                  <label for="email" class="colocar_email">Email
+                  <label for="Apellido" class="colocar_nombre">Nombre
                     <span class="obligatorio">*</span>
                   </label>
-                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                     <input type="text" name="txt_Apellidos" required/>
+                </p>
+              
+                <p>
+                  <label for="Correo o Email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                     <input type="text" name="txt_Correo" required/>
                 </p>
             
                 <p>
-                  <label for="telefone" class="colocar_telefono">Teléfono
+                  <label for="Telefono" class="colocar_telefono">Teléfono
                   </label>
-                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                </p>    
-              
-                <p>
-                  <label for="website" class="colocar_website">Sitio web
-                  </label>
-                    <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
-                </p>    
-              
-                <p>
-                  <label for="asunto" class="colocar_asunto">Asunto
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-                </p>    
-              
-                <p>
-                  <label for="mensaje" class="colocar_mensaje">Mensaje
-                    <span class="obligatorio">*</span>
-                  </label>                     
-                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                                </p>                    
-              
-                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                   <input type="text" name="txt_Telefono" required/>
+                </p>                    
+                <button type="submit" name="btn_registrar" value="registrar "><p>Enviar</p></button>
 
                 <p class="aviso">
                   <span class="obligatorio"> * </span>los campos son obligatorios.
