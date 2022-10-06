@@ -27,13 +27,13 @@ body{
   border-radius: 10px;  
   padding-top: 30px;
   padding-bottom: 20px;  
-  background-color: mediumorchid; 
+  background-color: #fbfbfb; 
   padding-left: 30px; 
 }
 
 
 input{
-  background-color: mediumorchid; 
+  background-color: #fbfbfb; 
   width: 408px; 
   height: 40px; 
   border-radius: 5px;  
@@ -47,7 +47,7 @@ input{
 
 
 textarea{
-  background-color: mediumorchid; 
+  background-color: #fbfbfb; 
   width: 405px; 
   height: 150px; 
   border-radius: 5px;  
