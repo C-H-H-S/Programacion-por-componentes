@@ -57,6 +57,8 @@ public class Control extends HttpServlet {
        // processRequest(request, response);
        String n=request.getParameter("txt_Nombre");
         String a=request.getParameter("txt_Apellidos");
+        String tel=request.getParameter("txt_Telefono");
+        String correo=request.getParameter("txt_Correo");
        response.setContentType("text/html;charset=UTF-8");
         try ( PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
@@ -66,7 +68,7 @@ public class Control extends HttpServlet {
             out.println("<title>RESPUESTA1</title>");            
             out.println("</head>");
             out.println("<body>");
-             out.println("<h1>El domicilio que llego: "+n+" "+a+"</h1>");
+             out.println("<h1>El domicilio que llego: "+n+" "+a+" "+tel+" "+correo+"</h1>");
             out.println("<h1>Esta es una respuesta desde el servelet control</h1>");
             out.println("</body>");
             out.println("</html>");
