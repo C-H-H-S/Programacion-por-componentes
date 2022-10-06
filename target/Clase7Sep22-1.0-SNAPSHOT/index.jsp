@@ -22,7 +22,7 @@
 
     <div class="formulario">      
       <div style="color:mediumorchid"><h2>BIENVENIDO</h2><div></div>
-          <center><h1><p style="color:black; font-size:50px">Claudia Helena Hernández Silva</p></h1></center>
+          <center><h1><p style="color:black; font-size:20px">Claudia Helena Hernández Silva</p></h1></center>
       <h1>Formulario de contacto</h1>
         <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
          <a href="Control">Verificar servelet objeto Response</a>
