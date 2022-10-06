@@ -12,23 +12,17 @@
   <title>Formulario de contacto</title>
 
   <link rel="stylesheet" type="text/css" href="estilo.css">
-
   
   </head>
 
 
 <body>  
-  
-  <!-- formulario de contacto en html y css -->  
 
   <div class="contact_form">
 
     <div class="formulario">      
       <h1>Formulario de contacto</h1>
         <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
-
-
-          <form action="submeter-formulario.php" method="post">       
 
             
                 <p>
