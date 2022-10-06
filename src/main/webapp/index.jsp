@@ -35,7 +35,7 @@
                   <label for="nombre" class="colocar_nombre">Nombre
                     <span class="obligatorio">*</span>
                   </label>
-                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                    <input type="text" name="txt_Nombre" required/>
                 </p>
               
                 <p>
