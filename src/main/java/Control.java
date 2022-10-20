@@ -5,6 +5,7 @@
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -40,6 +41,8 @@ public class Control extends HttpServlet {
             out.println("</body>");
             out.println("</html>");
         }
+      //  personaDao dao=new personaDao();
+      //  List <personaDto> lista= dao.readAll();
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -59,6 +62,7 @@ public class Control extends HttpServlet {
         String a=request.getParameter("txt_Apellidos");
         String tel=request.getParameter("txt_Telefono");
         String correo=request.getParameter("txt_Correo");
+        String clave=request.getParameter("txt_Clave");
        response.setContentType("text/html;charset=UTF-8");
         try ( PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
@@ -68,12 +72,13 @@ public class Control extends HttpServlet {
             out.println("<title>RESPUESTA1</title>");            
             out.println("</head>");
             out.println("<body>");
-             out.println("<h1>El domicilio que llego: <br>"+n+"<br> "+a+"<br> "+tel+"<br> "+correo+"</h1>");
+             out.println("<h1>El domicilio que llego: <br>"+n+"<br> "+a+"<br> "+tel+"<br> "+correo+"<br> "+clave+"</h1>");
             out.println("<h1>Esta es una respuesta desde el servelet control</h1>");
             out.println("</body>");
             out.println("</html>");
         }
     }
+    
 
     /**
      * Handles the HTTP <code>POST</code> method.
