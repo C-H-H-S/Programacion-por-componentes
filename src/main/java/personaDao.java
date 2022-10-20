@@ -16,7 +16,7 @@ import java.util.List;
  * @author Usuario
  */
 public class personaDao {
-    private static final String SQL_READALL="SELECT * FROM tb_Persona ";
+    private static final String SQL_READALL="SELECT * FROM tb_persona ";
     private static final conexion con=new conexion();
 
     public personaDao() {

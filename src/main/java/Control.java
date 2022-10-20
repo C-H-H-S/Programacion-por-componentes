@@ -5,6 +5,7 @@
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import static java.lang.System.out;
 import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -41,8 +42,12 @@ public class Control extends HttpServlet {
             out.println("</body>");
             out.println("</html>");
         }
-      //  personaDao dao=new personaDao();
-      //  List <personaDto> lista= dao.readAll();
+        personaDao dao=new personaDao();
+        List <personaDto> lista= dao.readAll();
+        for(int i=0;i<=lista.size();i++){
+         out.println("<h1>El domicilio que llego: <br>"+lista.get(i)+"</h1>");
+
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -54,7 +59,6 @@ public class Control extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
        // processRequest(request, response);
@@ -88,7 +92,6 @@ public class Control extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
@@ -99,7 +102,6 @@ public class Control extends HttpServlet {
      *
      * @return a String containing servlet description
      */
-    @Override
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>

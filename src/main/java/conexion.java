@@ -26,7 +26,7 @@ public class conexion {
     
     public conexion() {
         this.conectar = null;
-        this.BD = "bd_HernandezGomez";
+        this.BD = "bd_Hernandez";
         this.usuario = "postgres";
         this.contra = "123456";
     }
