@@ -65,8 +65,12 @@ public class personaDto {
     }
 
     @Override
-    public int hashCode() {
+     public int hashCode() {
         int hash = 5;
+        hash = 97 * hash + Objects.hashCode(this.nombre);
+        hash = 97 * hash + Objects.hashCode(this.telefono);
+        hash = 97 * hash + Objects.hashCode(this.correo);
+        hash = 97 * hash + Objects.hashCode(this.clave);
         return hash;
     }
 
