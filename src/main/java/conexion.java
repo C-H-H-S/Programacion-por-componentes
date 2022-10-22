@@ -33,7 +33,7 @@ public class conexion {
     public void conectar(){
         try{
         Class.forName("org.postgresql.Driver");
-        this.BD = "";
+        this.BD = "jdbc:postgresql://127.0.0.1:5432/bd_Hernandez";
         this.usuario = "postgres";
         this.contra = "123456";
         this.conectar = (Connection) DriverManager.getConnection(BD,usuario,contra);
