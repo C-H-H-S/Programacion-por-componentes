@@ -21,10 +21,10 @@
             <version>7.0</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>org.postgrestsql</groupId>
-            <artifactId>postgrestsql</artifactId>
-            <version>9.4.1208</version>
+         <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
         </dependency>
     </dependencies>
 

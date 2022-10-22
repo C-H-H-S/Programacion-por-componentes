@@ -42,13 +42,8 @@ public class Control extends HttpServlet {
             out.println("</body>");
             out.println("</html>");
         }
-        personaDao dao=new personaDao();
-        List <personaDto> lista= dao.readAll();
-        for(int i=0;i<=lista.size();i++){
-         out.println("<h1>El domicilio que llego: <br>"+lista.get(i)+"</h1>");
-
-        }
     }
+    
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -67,6 +62,7 @@ public class Control extends HttpServlet {
         String tel=request.getParameter("txt_Telefono");
         String correo=request.getParameter("txt_Correo");
         String clave=request.getParameter("txt_Clave");
+        personaDto persona=new personaDto(n,tel,correo,clave);
        response.setContentType("text/html;charset=UTF-8");
         try ( PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
@@ -76,34 +72,28 @@ public class Control extends HttpServlet {
             out.println("<title>RESPUESTA1</title>");            
             out.println("</head>");
             out.println("<body>");
-             out.println("<h1>El domicilio que llego: <br>"+n+"<br> "+a+"<br> "+tel+"<br> "+correo+"<br> "+clave+"</h1>");
+             out.println("<h1>El domicilio que llego: <br>"+n+"<br> "+"<br> "+tel+"<br> "+correo+"<br> "+clave+"</h1>");
             out.println("<h1>Esta es una respuesta desde el servelet control</h1>");
             out.println("</body>");
             out.println("</html>");
         }
+         personaDao dao=new personaDao();
+        List<personaDto> lista= dao.readAll();
+        for(personaDto i : lista){
+            System.out.println(i.toString());
     }
-    
-
-    /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        processRequest(request, response);
-    }
+ }
 
     /**
      * Returns a short description of the servlet.
      *
      * @return a String containing servlet description
      */
+    @Override
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
 
 }
+
+

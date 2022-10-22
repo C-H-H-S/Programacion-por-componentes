@@ -17,13 +17,15 @@ import java.util.List;
  */
 public class personaDao {
     private static final String SQL_READALL="SELECT * FROM tb_persona ";
-    private static final conexion con=new conexion();
+
 
     public personaDao() {
-        con.conectar();
+        
     }
     
     public List<personaDto> readAll(){
+         conexion con=new conexion();
+         con.conectar();
          List<personaDto> lista= null;
          PreparedStatement ps;
          

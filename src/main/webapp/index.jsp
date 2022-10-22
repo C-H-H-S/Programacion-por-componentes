@@ -37,13 +37,6 @@
                   </label>
                     <input type="text" name="txt_Nombre" required/>
                 </p>
-                
-                <p>
-                  <label for="Apellido" class="colocar_nombre">Apellido
-                    <span class="obligatorio">*</span>
-                  </label>
-                     <input type="text" name="txt_Apellidos" required/>
-                </p>
               
                 <p>
                   <label for="Correo o Email" class="colocar_email">Correo o Email
