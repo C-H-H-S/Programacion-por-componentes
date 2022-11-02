@@ -2,6 +2,7 @@
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,7 +31,8 @@ public class personaDao {
          PreparedStatement ps;
          
          try{
-             String query2 ="insert into tb_persona values(\'luisa\',\'181920\',\'luisa@gmail\',\'333\')";
+             Statement s = (Statement) conexion.getIntance();
+             s.executeUpdate("INSERT INTO tb_persona VALUES (\'luisa\',\'181920\',\'luisa@gmail\',\'333\')");
              ps=con.getConexion().prepareStatement(SQL_READALL);
              ResultSet rs= ps.executeQuery();
              lista= new ArrayList<>();
