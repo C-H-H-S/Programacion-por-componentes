@@ -30,6 +30,7 @@ public class personaDao {
          PreparedStatement ps;
          
          try{
+             String query2 ="insert into tb_persona values(\'luisa\',\'181920\',\'luisa@gmail\',\'333\')";
              ps=con.getConexion().prepareStatement(SQL_READALL);
              ResultSet rs= ps.executeQuery();
              lista= new ArrayList<>();
