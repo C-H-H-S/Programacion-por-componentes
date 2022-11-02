@@ -5,6 +5,11 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import com.mysql.jdbc.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -27,12 +32,13 @@ public class personaDao {
     public List<personaDto> realAll(){
          conexion con=new conexion();
          con.conectar();
-         List<personaDto> lista= null;
+        List<personaDto> lista= null;
          PreparedStatement ps;
          
          try{
-             Statement s = (Statement) conexion.getIntance();
-             s.executeUpdate("INSERT INTO tb_persona VALUES (\'luisa\',\'181920\',\'luisa@gmail\',\'333\')");
+             con.conectar();
+             Statement s = con.getConexion().createStatement();
+             s.executeUpdate("INSERT INTO tb_persona VALUES ('luisa','181920','luisa@gmail','333')");
              ps=con.getConexion().prepareStatement(SQL_READALL);
              ResultSet rs= ps.executeQuery();
              lista= new ArrayList<>();
