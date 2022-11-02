@@ -78,7 +78,7 @@ public class Control extends HttpServlet {
             out.println("</html>");
         }
          personaDao dao=new personaDao();
-        List<personaDto> lista= dao.readAll();
+        List<personaDto> lista= dao.realAll();
         for(personaDto i : lista){
             System.out.println(i.toString());
     }

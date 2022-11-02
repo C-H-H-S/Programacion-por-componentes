@@ -23,7 +23,7 @@ public class personaDao {
         
     }
     
-    public List<personaDto> readAll(){
+    public List<personaDto> realAll(){
          conexion con=new conexion();
          con.conectar();
          List<personaDto> lista= null;

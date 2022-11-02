@@ -16,6 +16,7 @@ public class conexion {
     private String BD;
     private String usuario;
     private String contra;
+    private static conexion con; 
 
     public conexion(Connection conectar, String BD, String usuario, String contra) {
         this.conectar = conectar;
@@ -45,5 +46,10 @@ public class conexion {
     public Connection getConexion(){
         return conectar;
     }
-    
+    public static conexion getIntance(){
+        if(con==null){
+            con=new conexion();
+        }
+        return con;
+    } 
 }
