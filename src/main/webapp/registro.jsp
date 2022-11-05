@@ -10,35 +10,46 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="estilo.css">
 	<title>Registro</title>
     </head>
     <body>
 	<div class="container-page" id="Container">
 		<div class="login-container" id="LoginContainer">
-		    <h1 class="title">Hola!!!-Registro</h1>
+		    <center> <h1>¡¡REGISTRATE!!</h1></center>
 		    <a href="Control">Verificar servelet objeto Response</a>
 		    <form action="Control" method="get">
-			<div class="input-line-container">
-			   <span class="name-input">Nombres</span>
-			   <input type="text" name="txt_Nombre" required/ class="input-line" id="">
-			</div>
-			<div class="input-line-container">	
-			   <span class="name-input">Número</span>
-			   <input type="text" name="txt_Numero" required/ class="input-line" id="">
-                        </div>
-			<div class="input-line-container">	
-			   <span class="name-input">Correo</span>
-			   <input type="text" name="txt_Correo" required/ class="input-line" id="">
-                        </div>
-                        <div class="input-line-container">	
-			   <span class="name-input">Contraseña</span>
-			   <input type="text" name="txt_Clave" required/ class="input-line" id="">
-                        </div>
-			   <input type="submit" name="action" value="Registrar"/ class="button-login">
+                        
+                         <p>
+                  <label for="Nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="txt_Nombre" required / class="input-line" id="">
+                </p>
+                
+                 <p>
+                  <label for="Telefono" class="colocar_telefono">Teléfono
+                  </label>
+                   <input type="text" name="txt_Telefono" required/ class="input-line" id="">
+                </p> 
+                
+                   <p>
+                  <label for="Correo o Email" class="colocar_email">Correo o Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                     <input type="text" name="txt_Correo" required/ class="input-line" id="">
+                </p>
+                
+                         <p>
+                  <label for="Clave" class="colocar_clave">Clave
+                  </label>
+                   <input type="text" name="txt_Clave" required/ class="input-line" id="">
+                </p> 
+                        
+			   <input button type="submit" name="action" value="Registrar"/ class="button-login">
                            
                             <a href="index.jsp">
-        			<input type="button" value="Ingresar" / class="button-second">
+        			<input button type="button" value="Ingresar" / class="button-second">
    			   </a>
 		    </form>
 		</div>

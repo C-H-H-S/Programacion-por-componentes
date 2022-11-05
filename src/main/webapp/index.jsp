@@ -9,7 +9,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Formulario de contacto</title>
+  <title>Formulario de Ingreso</title>
 
   <link rel="stylesheet" type="text/css" href="estilo.css">
   
@@ -40,10 +40,10 @@
                    <input type="password" name="txt_Clave" required/ class="input-line" id="">
                 </p> 
                 
-                <input type="submit" name="action" value="Ingresar" / class="button-login">
+                <input button type="submit" name="action" value="Ingresar" / class="button-login">
              <%--<button type="submit" name="btn_registrar" value="registrar id="enviar"><p>Enviar</p></button>--%>     
             <a href="registro.jsp">
-        			<input type="button" value="Registrar" / class="button-second">
+        			<input button type="button" value="Registrar" / class="button-second">
    			   </a>
           </form>
     </div>  
