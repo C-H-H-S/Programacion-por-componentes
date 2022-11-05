@@ -14,8 +14,9 @@
 	<title>Registro</title>
     </head>
     <body>
-	<div class="container-page" id="Container">
-		<div class="login-container" id="LoginContainer">
+	  <div class="contact_form">
+              
+		<div class="formulario"> 
 		    <center> <h1>¡¡REGISTRATE!!</h1></center>
 		    <a href="Control">Verificar servelet objeto Response</a>
 		    <form action="Control" method="get">

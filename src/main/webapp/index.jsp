@@ -39,11 +39,13 @@
                      <span class="name-input">Clave</span>
                    <input type="password" name="txt_Clave" required/ class="input-line" id="">
                 </p> 
+               
+                <%-- <input button type="submit" name="action" value="Ingresar" / class="button-login">--%>  
                 
-                <input button type="submit" name="action" value="Ingresar" / class="button-login">
-             <%--<button type="submit" name="btn_registrar" value="registrar id="enviar"><p>Enviar</p></button>--%>     
+             <button type="submit" name="btn_registrar" value="Ingresar"><p>Ingresar</p></button> 
+             
             <a href="registro.jsp">
-        			<input button type="button" value="Registrar" / class="button-second">
+        			<button type="submit" name="btn_registrar" value="registrar"><p>Regitrar</p></button> 
    			   </a>
           </form>
     </div>  
