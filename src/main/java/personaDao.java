@@ -22,10 +22,10 @@ import java.sql.Statement;
  */
 public class personaDao {
     private static final String SQL_READALL="SELECT * FROM tb_persona ";
-
+    private static final conexion con= conexion.getIntance();
 
     public personaDao() {
-        
+         con.conectar();
     }
     
     public List<personaDto> realAll(){
@@ -51,4 +51,44 @@ public class personaDao {
          }
         return lista;
     }
+    public personaDto verificar(String correo, String clave){
+    personaDto ObjPer=new personaDto();
+    String sql = "SELECT * FROM tb_persona WHERE correo='" + correo + "' AND clave='" + clave + "'";
+    PreparedStatement ps;
+    
+        try {
+            ps=con.getConexion().prepareStatement(sql);
+            ResultSet rs = ps.executeQuery();
+            while(rs.next()){
+                    if(rs.getString("correo").equals(correo) && rs.getString("clave").equals(clave)){
+                      ObjPer.setNombre(rs.getString("nombre"));
+                      ObjPer.setTelefono(rs.getString("telefono"));
+                      ObjPer.setCorreo(rs.getString("correo"));
+                      ObjPer.setClave(rs.getString("clave"));
+                    }
+            }
+        } catch (Exception e) {
+            System.out.println("No se logro conectar al verificar");
+        }
+    return ObjPer;
+    }
+    
+    
+    public boolean insertar(personaDto objetv) {
+        boolean verificar=false;
+        String sql = "INSERT INTO tb_persona (nombre, telefono, correo, clave) VALUES('" + objetv.getNombre()
+                + "','" + objetv.getTelefono()+ "','" + objetv.getCorreo() + "','" + objetv.getClave() + "')";     
+        try {
+            Statement ps;
+            ps = con.getConexion().createStatement();
+            ps.executeUpdate(sql);           
+            verificar=true;       
+        } catch (SQLException ex) {
+            System.out.println("Error al conectar: " + ex);
+           verificar=false;
+        }
+       return verificar;
+    }
+    
 }
+

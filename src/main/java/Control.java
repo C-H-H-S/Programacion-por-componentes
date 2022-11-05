@@ -57,7 +57,36 @@ public class Control extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
        // processRequest(request, response);
-       String n=request.getParameter("txt_Nombre");
+       
+        String action=(String) request.getParameter("action");
+       
+    if (action.equals("Ingresar")){
+        String correo = request.getParameter("txt_Correo");
+        String clave = request.getParameter("txt_Clave");
+        personaDto ObjPer=new personaDao().verificar(correo, clave);
+        
+        if (ObjPer.getClave().equals(clave)) {
+                request.getRequestDispatcher("Inicio.jsp").forward(request, response);
+            }else {
+                request.getRequestDispatcher("index.jsp").forward(request, response);
+        }
+    }   
+    
+    
+    if (action.equals("Registrar")){
+        
+        String nombre=request.getParameter("txt_Nombre");
+        String numero=request.getParameter("txt_Numero");
+        String Correo=request.getParameter("txt_Correo");
+        String Clave=request.getParameter("txt_Clave");
+        
+        personaDto persona=new personaDto(nombre,numero,Correo,Clave);
+        personaDao hi=new personaDao();
+        hi.insertar(persona);
+        request.getRequestDispatcher("index.jsp").forward(request, response);
+    }
+    
+     /*  String n=request.getParameter("txt_Nombre");
         String a=request.getParameter("txt_Apellidos");
         String tel=request.getParameter("txt_Telefono");
         String correo=request.getParameter("txt_Correo");
@@ -65,7 +94,7 @@ public class Control extends HttpServlet {
         personaDto persona=new personaDto(n,tel,correo,clave);
        response.setContentType("text/html;charset=UTF-8");
         try ( PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
+
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
@@ -81,8 +110,13 @@ public class Control extends HttpServlet {
         List<personaDto> lista= dao.realAll();
         for(personaDto i : lista){
             System.out.println(i.toString());
-    }
+    }*/
  }
+     @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        processRequest(request, response);
+    }
 
     /**
      * Returns a short description of the servlet.
