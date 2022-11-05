@@ -23,25 +23,20 @@
     <div class="formulario">      
      <center> <h1>BIENVENIDO</h1></center>
           <center><h1><p style="color:black; font-size:20px">Claudia Helena Hernández Silva</p></h1></center>
-      <h1>Formulario de contacto</h1>
-        <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
-        <h3>Ingresar</h3>
+      <h1>Formulario de Ingreso</h1>
+        <h3>Si no tienes una cuenta, ¡registraté!</h3>
          <a href="Control">Verificar servelet objeto Response</a>
 
 
               <form action="Control" method="get">
 
                   <p>
-                  <label for="Correo o Email" class="colocar_email">Correo o Email
-                  </label>
                       <span class="name-input">Correo</span>
                      <input type="text" name="txt_Correo" required / class="input-line" id="">
                 </p>
                 
                 <p>
-                  <label for="Clave" class="colocar_clave">Clave
-                  </label>
-                     <span class="name-input">Contraseña</span>
+                     <span class="name-input">Clave</span>
                    <input type="password" name="txt_Clave" required/ class="input-line" id="">
                 </p> 
                 
