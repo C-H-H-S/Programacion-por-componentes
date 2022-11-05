@@ -76,7 +76,7 @@ public class Control extends HttpServlet {
     if (action.equals("Registrar")){
         
         String nombre=request.getParameter("txt_Nombre");
-        String numero=request.getParameter("txt_Numero");
+        String numero=request.getParameter("txt_Telefono");
         String Correo=request.getParameter("txt_Correo");
         String Clave=request.getParameter("txt_Clave");
         
