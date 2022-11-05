@@ -47,10 +47,10 @@
                    <input type="text" name="txt_Clave" required/ class="input-line" id="">
                 </p> 
                         
-			   <input button type="submit" name="action" value="Registrar"/ class="button-login">
+			   <button type="submit" name="action" value="Registrar"/ class="button-login"></button><p>Registrar</p>
                            
                             <a href="index.jsp">
-        			<input button type="button" value="Ingresar" / class="button-second">
+        			<button button type="button" value="Ingresar" / class="button-second"></button><p>Volver</p>
    			   </a>
 		    </form>
 		</div>
