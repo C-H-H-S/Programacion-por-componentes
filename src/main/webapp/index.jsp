@@ -23,10 +23,10 @@
     <div class="formulario">      
      <center> <h1>BIENVENIDO</h1></center>
           <center><h1><p style="color:black; font-size:20px">Claudia Helena Hernández Silva</p></h1></center>
-      <h1>Formulario de Ingreso</h1>
-        <h3>Si no tienes una cuenta, ¡registraté!</h3>
+      <center><h1>Formulario de Ingreso</h1> </center>
+         <center><h3>Si no tienes una cuenta, ¡registraté!</h3></center>
+        
          <a href="Control">Verificar servelet objeto Response</a>
-
 
               <form action="Control" method="get">
 
