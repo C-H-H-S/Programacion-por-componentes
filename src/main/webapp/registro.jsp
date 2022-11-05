@@ -26,25 +26,27 @@
                     <span class="obligatorio">*</span>
                   </label>
                     <input type="text" name="txt_Nombre" required / class="input-line" id="">
-                </p>
+                </p> 
                 
                  <p>
                   <label for="Telefono" class="colocar_telefono">Teléfono
+                      <span class="obligatorio">*</span>
                   </label>
-                   <input type="text" name="txt_Telefono" required/ class="input-line" id="">
+                   <input type="text" name="txt_Telefono" required / class="input-line" id="">
                 </p> 
                 
                    <p>
                   <label for="Correo o Email" class="colocar_email">Correo o Email
                     <span class="obligatorio">*</span>
                   </label>
-                     <input type="text" name="txt_Correo" required/ class="input-line" id="">
+                     <input type="text" name="txt_Correo" required / class="input-line" id="">
                 </p>
                 
                          <p>
                   <label for="Clave" class="colocar_clave">Clave
+                      <span class="obligatorio">*</span>
                   </label>
-                   <input type="text" name="txt_Clave" required/ class="input-line" id="">
+                   <input type="text" name="txt_Clave" required / class="input-line" id="">
                 </p> 
                         
 			   <button type="submit" name="action" value="Registrar"/ class="button-login"><p>Registrar</p></button>
