@@ -40,12 +40,12 @@
                    <input type="password" name="txt_Clave" required/ class="input-line" id="">
                 </p> 
                 
-                <button type="submit" name="action" value= "Ingresar" / class="button-login"></button><p>Ingresar</p>
+                <button type="submit" name="action" value= "Ingresar" / class="button-login"><p>Ingresar</p></button>
                 
              <%--<button type="submit" name="btn_registrar" value="registrar id="enviar"><p>Enviar</p></button>--%> 
              
             <a href="registro.jsp">
-        			<button type="button" value= "Registrar" / class="button-second"></button><p>Registrar</p>
+        			<button type="button" value= "Registrar" / class="button-second"><p>Registrar</p></button>
    			   </a>
           </form>
     </div>  
