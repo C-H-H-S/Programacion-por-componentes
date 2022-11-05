@@ -26,7 +26,7 @@
       <center><h1>Formulario de Ingreso</h1> </center>
          <center><h3>Si no tienes una cuenta, ¡registraté!</h3></center>
         
-         <a href="Control">Verificar servelet objeto Response</a>
+         <a href="Control" name="action" value= "Response">Verificar servelet objeto Response</a>
 
               <form action="Control" method="get">
 

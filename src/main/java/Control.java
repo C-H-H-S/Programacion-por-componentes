@@ -86,6 +86,33 @@ public class Control extends HttpServlet {
         request.getRequestDispatcher("index.jsp").forward(request, response);
     }
     
+    if (action.equals("Response")){
+    String n=request.getParameter("txt_Nombre");
+        String a=request.getParameter("txt_Apellidos");
+        String tel=request.getParameter("txt_Telefono");
+        String correo=request.getParameter("txt_Correo");
+        String clave=request.getParameter("txt_Clave");
+        personaDto persona=new personaDto(n,tel,correo,clave);
+       response.setContentType("text/html;charset=UTF-8");
+        try ( PrintWriter out = response.getWriter()) {
+
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>RESPUESTA1</title>");            
+            out.println("</head>");
+            out.println("<body>");
+             out.println("<h1>El domicilio que llego: <br>"+n+"<br> "+"<br> "+tel+"<br> "+correo+"<br> "+clave+"</h1>");
+            out.println("<h1>Esta es una respuesta desde el servelet control</h1>");
+            out.println("</body>");
+            out.println("</html>");
+        }
+         personaDao dao=new personaDao();
+        List<personaDto> lista= dao.realAll();
+        for(personaDto i : lista){
+            System.out.println(i.toString());
+    }
+    
      /*  String n=request.getParameter("txt_Nombre");
         String a=request.getParameter("txt_Apellidos");
         String tel=request.getParameter("txt_Telefono");
@@ -111,7 +138,8 @@ public class Control extends HttpServlet {
         for(personaDto i : lista){
             System.out.println(i.toString());
     }*/
- }
+    }
+  }
      @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
